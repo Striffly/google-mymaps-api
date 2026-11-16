@@ -1,0 +1,1987 @@
+[
+ {
+  "id": 1899,
+  "label": "Repère",
+  "section": "Formes"
+ },
+ {
+  "id": 1739,
+  "label": "Point",
+  "section": "Formes"
+ },
+ {
+  "id": 1498,
+  "label": "Carré (petit)",
+  "section": "Formes"
+ },
+ {
+  "id": 1500,
+  "label": "Carré",
+  "section": "Formes"
+ },
+ {
+  "id": 1501,
+  "label": "Diamant",
+  "section": "Formes"
+ },
+ {
+  "id": 1499,
+  "label": "Cercle",
+  "section": "Formes"
+ },
+ {
+  "id": 1502,
+  "label": "Étoile",
+  "section": "Formes"
+ },
+ {
+  "id": 1592,
+  "label": "Cœur",
+  "section": "Formes"
+ },
+ {
+  "id": 1846,
+  "label": "Guillemets",
+  "section": "Formes"
+ },
+ {
+  "id": 1769,
+  "label": "Coche",
+  "section": "Formes"
+ },
+ {
+  "id": 1898,
+  "label": "X",
+  "section": "Formes"
+ },
+ {
+  "id": 1519,
+  "label": "Base-ball",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1520,
+  "label": "Basket-ball",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1579,
+  "label": "Football américain",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1696,
+  "label": "Football",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1858,
+  "label": "Rugby",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1890,
+  "label": "Volley-ball",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1585,
+  "label": "Golf",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1799,
+  "label": "Parcours de golf",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1707,
+  "label": "Tennis",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1843,
+  "label": "Polo",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1755,
+  "label": "Badminton",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1849,
+  "label": "Racketball",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1875,
+  "label": "Squash",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1761,
+  "label": "Boxe",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1825,
+  "label": "Arts martiaux",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1788,
+  "label": "Escrime",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1893,
+  "label": "Haltérophilie",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1661,
+  "label": "Course",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1698,
+  "label": "Stade",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1601,
+  "label": "Hippisme",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1527,
+  "label": "Bowling",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1747,
+  "label": "Billard",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1554,
+  "label": "Cricket",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1752,
+  "label": "Tir à l'arc",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1680,
+  "label": "Course à pied",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1837,
+  "label": "Marche nordique",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1522,
+  "label": "Cyclisme",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1773,
+  "label": "Danse",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1771,
+  "label": "Escalade (mousqueton)",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1772,
+  "label": "Escalade (cordes)",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1768,
+  "label": "Spéléologie",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1794,
+  "label": "Frisbee",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1866,
+  "label": "Skateboard",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1838,
+  "label": "Parachute",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1897,
+  "label": "Wingsuit",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1805,
+  "label": "Hockey",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1867,
+  "label": "Patinage",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1688,
+  "label": "Ski de descente",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1690,
+  "label": "Ski de fond",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1689,
+  "label": "Remontée mécanique",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1871,
+  "label": "Snowboard",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1691,
+  "label": "Luge",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1873,
+  "label": "Randonnée en raquettes",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1872,
+  "label": "Motoneige",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1536,
+  "label": "Canoë",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1615,
+  "label": "Canoë-kayak",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1681,
+  "label": "Voile",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1814,
+  "label": "Jet ski",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1880,
+  "label": "Surf",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1817,
+  "label": "Kitesurf",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1896,
+  "label": "Planche à voile",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1701,
+  "label": "Natation",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1870,
+  "label": "Randonnée palmée",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1861,
+  "label": "Plongée sous-marine",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1573,
+  "label": "Pêche",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1864,
+  "label": "Épave de bateau",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1521,
+  "label": "Plage",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1777,
+  "label": "Plongée",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1650,
+  "label": "Pique-nique",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1720,
+  "label": "Arbre (conifère)",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1886,
+  "label": "Arbre (feuillu)",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1887,
+  "label": "Arbre (palmier)",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1634,
+  "label": "Montagne",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1767,
+  "label": "Grotte",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1811,
+  "label": "Source d'eau chaude",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1892,
+  "label": "Chute d'eau",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1882,
+  "label": "Piscine à vague",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1597,
+  "label": "Point de départ",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1596,
+  "label": "Randonnée",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1595,
+  "label": "Randonnée (en groupe)",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1760,
+  "label": "Observation des oiseaux",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1774,
+  "label": "Faune",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1812,
+  "label": "Chasse",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1855,
+  "label": "Collection de roches",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1878,
+  "label": "Astronomie",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1523,
+  "label": "Panorama",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1765,
+  "label": "Camping",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1801,
+  "label": "Guitare",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1764,
+  "label": "Feu de camp",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1800,
+  "label": "Grillades",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1802,
+  "label": "Hachette",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1763,
+  "label": "Campeur",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1754,
+  "label": "Quad",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1859,
+  "label": "Camping-car",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1781,
+  "label": "Station de vidange",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1792,
+  "label": "Stockage des aliments",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1865,
+  "label": "Douches",
+  "section": "Sports et loisirs"
+ },
+ {
+  "id": 1577,
+  "label": "Restaurant",
+  "section": "Lieux"
+ },
+ {
+  "id": 1567,
+  "label": "Restauration rapide",
+  "section": "Lieux"
+ },
+ {
+  "id": 1530,
+  "label": "Hamburger",
+  "section": "Lieux"
+ },
+ {
+  "id": 1810,
+  "label": "Hot-dogs",
+  "section": "Lieux"
+ },
+ {
+  "id": 1651,
+  "label": "Pizza",
+  "section": "Lieux"
+ },
+ {
+  "id": 1640,
+  "label": "Nouilles",
+  "section": "Lieux"
+ },
+ {
+  "id": 1835,
+  "label": "Sushis",
+  "section": "Lieux"
+ },
+ {
+  "id": 1553,
+  "label": "Steak",
+  "section": "Lieux"
+ },
+ {
+  "id": 1545,
+  "label": "Poulet",
+  "section": "Lieux"
+ },
+ {
+  "id": 1607,
+  "label": "Glaces",
+  "section": "Lieux"
+ },
+ {
+  "id": 1517,
+  "label": "Cocktails et apéritifs",
+  "section": "Lieux"
+ },
+ {
+  "id": 1518,
+  "label": "Pub",
+  "section": "Lieux"
+ },
+ {
+  "id": 1879,
+  "label": "Bière",
+  "section": "Lieux"
+ },
+ {
+  "id": 1798,
+  "label": "Serre",
+  "section": "Lieux"
+ },
+ {
+  "id": 1534,
+  "label": "Café-restaurant",
+  "section": "Lieux"
+ },
+ {
+  "id": 1705,
+  "label": "Salon de thé",
+  "section": "Lieux"
+ },
+ {
+  "id": 1684,
+  "label": "Achats",
+  "section": "Lieux"
+ },
+ {
+  "id": 1584,
+  "label": "Cadeaux",
+  "section": "Lieux"
+ },
+ {
+  "id": 1685,
+  "label": "Panier d'achat",
+  "section": "Lieux"
+ },
+ {
+  "id": 1578,
+  "label": "Épiceries",
+  "section": "Lieux"
+ },
+ {
+  "id": 1683,
+  "label": "Chaussures",
+  "section": "Lieux"
+ },
+ {
+  "id": 1549,
+  "label": "Vêtement",
+  "section": "Lieux"
+ },
+ {
+  "id": 1613,
+  "label": "Bijoux",
+  "section": "Lieux"
+ },
+ {
+  "id": 1582,
+  "label": "Jardin",
+  "section": "Lieux"
+ },
+ {
+  "id": 1587,
+  "label": "Alimentation équilibrée",
+  "section": "Lieux"
+ },
+ {
+  "id": 1646,
+  "label": "Pharmacie",
+  "section": "Lieux"
+ },
+ {
+  "id": 1841,
+  "label": "Pharmacie (Europe)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1647,
+  "label": "Téléphones mobiles",
+  "section": "Lieux"
+ },
+ {
+  "id": 1609,
+  "label": "Services Internet",
+  "section": "Lieux"
+ },
+ {
+  "id": 1895,
+  "label": "Wi-Fi",
+  "section": "Lieux"
+ },
+ {
+  "id": 1820,
+  "label": "Ordinateur portable",
+  "section": "Lieux"
+ },
+ {
+  "id": 1725,
+  "label": "Télévision",
+  "section": "Lieux"
+ },
+ {
+  "id": 1526,
+  "label": "Livres",
+  "section": "Lieux"
+ },
+ {
+  "id": 1638,
+  "label": "Marchand de journaux",
+  "section": "Lieux"
+ },
+ {
+  "id": 1510,
+  "label": "Distributeur de billets",
+  "section": "Lieux"
+ },
+ {
+  "id": 1753,
+  "label": "Distributeur de billets (générique)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1570,
+  "label": "Services financiers",
+  "section": "Lieux"
+ },
+ {
+  "id": 1555,
+  "label": "Échanges de devises",
+  "section": "Lieux"
+ },
+ {
+  "id": 1756,
+  "label": "Banque",
+  "section": "Lieux"
+ },
+ {
+  "id": 1512,
+  "label": "Dollar",
+  "section": "Lieux"
+ },
+ {
+  "id": 1513,
+  "label": "Euro",
+  "section": "Lieux"
+ },
+ {
+  "id": 1514,
+  "label": "Livre",
+  "section": "Lieux"
+ },
+ {
+  "id": 1758,
+  "label": "Victoire",
+  "section": "Lieux"
+ },
+ {
+  "id": 1515,
+  "label": "Yen/Yuan",
+  "section": "Lieux"
+ },
+ {
+  "id": 1709,
+  "label": "Théâtre",
+  "section": "Lieux"
+ },
+ {
+  "id": 1511,
+  "label": "Événement",
+  "section": "Lieux"
+ },
+ {
+  "id": 1762,
+  "label": "Anniversaire",
+  "section": "Lieux"
+ },
+ {
+  "id": 1635,
+  "label": "Films",
+  "section": "Lieux"
+ },
+ {
+  "id": 1712,
+  "label": "Billet",
+  "section": "Lieux"
+ },
+ {
+  "id": 1713,
+  "label": "Billet (étoile)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1540,
+  "label": "Jeux d'argent et de hasard",
+  "section": "Lieux"
+ },
+ {
+  "id": 1568,
+  "label": "Parc d'attractions",
+  "section": "Lieux"
+ },
+ {
+  "id": 1743,
+  "label": "Zoo",
+  "section": "Lieux"
+ },
+ {
+  "id": 1649,
+  "label": "Music-hall",
+  "section": "Lieux"
+ },
+ {
+  "id": 1637,
+  "label": "Musique",
+  "section": "Lieux"
+ },
+ {
+  "id": 1614,
+  "label": "Karaoké",
+  "section": "Lieux"
+ },
+ {
+  "id": 1832,
+  "label": "Moustache",
+  "section": "Lieux"
+ },
+ {
+  "id": 1503,
+  "label": "Divertissement pour adultes",
+  "section": "Lieux"
+ },
+ {
+  "id": 1715,
+  "label": "Tour",
+  "section": "Lieux"
+ },
+ {
+  "id": 1509,
+  "label": "Art",
+  "section": "Lieux"
+ },
+ {
+  "id": 1735,
+  "label": "Personnes atteintes d'un handicap",
+  "section": "Lieux"
+ },
+ {
+  "id": 1644,
+  "label": "Parking",
+  "section": "Lieux"
+ },
+ {
+  "id": 1652,
+  "label": "Aire de jeu",
+  "section": "Lieux"
+ },
+ {
+  "id": 1535,
+  "label": "Photo",
+  "section": "Lieux"
+ },
+ {
+  "id": 1727,
+  "label": "Vidéo",
+  "section": "Lieux"
+ },
+ {
+  "id": 1783,
+  "label": "Porte",
+  "section": "Lieux"
+ },
+ {
+  "id": 1782,
+  "label": "Ascenseur",
+  "section": "Lieux"
+ },
+ {
+  "id": 1786,
+  "label": "Escalier roulant",
+  "section": "Lieux"
+ },
+ {
+  "id": 1784,
+  "label": "Escalier roulant (descendant)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1785,
+  "label": "Escalier roulant (montant)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1877,
+  "label": "Escaliers",
+  "section": "Lieux"
+ },
+ {
+  "id": 1833,
+  "label": "Tapis roulant",
+  "section": "Lieux"
+ },
+ {
+  "id": 1803,
+  "label": "Ici",
+  "section": "Lieux"
+ },
+ {
+  "id": 1826,
+  "label": "Point de rendez-vous",
+  "section": "Lieux"
+ },
+ {
+  "id": 1824,
+  "label": "Objets trouvés",
+  "section": "Lieux"
+ },
+ {
+  "id": 1823,
+  "label": "Casier",
+  "section": "Lieux"
+ },
+ {
+  "id": 1845,
+  "label": "Imprimante",
+  "section": "Lieux"
+ },
+ {
+  "id": 1891,
+  "label": "Salle d'attente",
+  "section": "Lieux"
+ },
+ {
+  "id": 1648,
+  "label": "Téléphone",
+  "section": "Lieux"
+ },
+ {
+  "id": 1857,
+  "label": "Corbeille",
+  "section": "Lieux"
+ },
+ {
+  "id": 1850,
+  "label": "Recyclage",
+  "section": "Lieux"
+ },
+ {
+  "id": 1836,
+  "label": "Interdiction de fumer",
+  "section": "Lieux"
+ },
+ {
+  "id": 1868,
+  "label": "Zone fumeurs",
+  "section": "Lieux"
+ },
+ {
+  "id": 1733,
+  "label": "Toilettes",
+  "section": "Lieux"
+ },
+ {
+  "id": 1734,
+  "label": "Toilettes (femmes)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1732,
+  "label": "Toilettes (hommes)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1687,
+  "label": "Douche",
+  "section": "Lieux"
+ },
+ {
+  "id": 1742,
+  "label": "Garderie",
+  "section": "Lieux"
+ },
+ {
+  "id": 1844,
+  "label": "Poussette",
+  "section": "Lieux"
+ },
+ {
+  "id": 1790,
+  "label": "Extincteur",
+  "section": "Lieux"
+ },
+ {
+  "id": 1624,
+  "label": "Services médicaux",
+  "section": "Lieux"
+ },
+ {
+  "id": 1749,
+  "label": "Défibrillateur",
+  "section": "Lieux"
+ },
+ {
+  "id": 1525,
+  "label": "Rampe de mise à l'eau",
+  "section": "Lieux"
+ },
+ {
+  "id": 1623,
+  "label": "Port de plaisance",
+  "section": "Lieux"
+ },
+ {
+  "id": 1622,
+  "label": "Yacht",
+  "section": "Lieux"
+ },
+ {
+  "id": 1621,
+  "label": "Tour de surveillance",
+  "section": "Lieux"
+ },
+ {
+  "id": 1708,
+  "label": "Amphithéâtre",
+  "section": "Lieux"
+ },
+ {
+  "id": 1508,
+  "label": "Refuge pour animaux",
+  "section": "Lieux"
+ },
+ {
+  "id": 1506,
+  "label": "Services pour animaux",
+  "section": "Lieux"
+ },
+ {
+  "id": 1599,
+  "label": "Monument",
+  "section": "Lieux"
+ },
+ {
+  "id": 1580,
+  "label": "Fontaine",
+  "section": "Lieux"
+ },
+ {
+  "id": 1611,
+  "label": "Point d'intérêt",
+  "section": "Lieux"
+ },
+ {
+  "id": 1610,
+  "label": "Cimetière (Japon)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1542,
+  "label": "Cimetière",
+  "section": "Lieux"
+ },
+ {
+  "id": 1600,
+  "label": "Plaque",
+  "section": "Lieux"
+ },
+ {
+  "id": 1636,
+  "label": "Musée",
+  "section": "Lieux"
+ },
+ {
+  "id": 1598,
+  "label": "Bâtiment historique",
+  "section": "Lieux"
+ },
+ {
+  "id": 1566,
+  "label": "Ferme",
+  "section": "Lieux"
+ },
+ {
+  "id": 1627,
+  "label": "Mine",
+  "section": "Lieux"
+ },
+ {
+  "id": 1618,
+  "label": "Phare",
+  "section": "Lieux"
+ },
+ {
+  "id": 1529,
+  "label": "Tour radio",
+  "section": "Lieux"
+ },
+ {
+  "id": 1729,
+  "label": "Belvédère",
+  "section": "Lieux"
+ },
+ {
+  "id": 1728,
+  "label": "Belvédère (vue partielle)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1591,
+  "label": "Sièges sociaux",
+  "section": "Lieux"
+ },
+ {
+  "id": 1602,
+  "label": "Hôtel",
+  "section": "Lieux"
+ },
+ {
+  "id": 1559,
+  "label": "Dortoir",
+  "section": "Lieux"
+ },
+ {
+  "id": 1631,
+  "label": "Supérette",
+  "section": "Lieux"
+ },
+ {
+  "id": 1659,
+  "label": "Bureau de poste",
+  "section": "Lieux"
+ },
+ {
+  "id": 1612,
+  "label": "Bureau de poste (Japon)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1581,
+  "label": "Station-service",
+  "section": "Lieux"
+ },
+ {
+  "id": 1787,
+  "label": "Borne de recharge de véhicules électriques",
+  "section": "Lieux"
+ },
+ {
+  "id": 1741,
+  "label": "Location de voitures",
+  "section": "Lieux"
+ },
+ {
+  "id": 1539,
+  "label": "Réparation de voiture",
+  "section": "Lieux"
+ },
+ {
+  "id": 1516,
+  "label": "Salon de coiffure",
+  "section": "Lieux"
+ },
+ {
+  "id": 1617,
+  "label": "Service de blanchisserie",
+  "section": "Lieux"
+ },
+ {
+  "id": 1821,
+  "label": "Buanderie",
+  "section": "Lieux"
+ },
+ {
+  "id": 1816,
+  "label": "Cuisine",
+  "section": "Lieux"
+ },
+ {
+  "id": 1551,
+  "label": "Construction",
+  "section": "Lieux"
+ },
+ {
+  "id": 1590,
+  "label": "Matériel électronique",
+  "section": "Lieux"
+ },
+ {
+  "id": 1561,
+  "label": "Électricien",
+  "section": "Lieux"
+ },
+ {
+  "id": 1703,
+  "label": "Plomberie",
+  "section": "Lieux"
+ },
+ {
+  "id": 1531,
+  "label": "Entreprise",
+  "section": "Lieux"
+ },
+ {
+  "id": 1699,
+  "label": "Voyages",
+  "section": "Lieux"
+ },
+ {
+  "id": 1665,
+  "label": "Immobilier",
+  "section": "Lieux"
+ },
+ {
+  "id": 1682,
+  "label": "École",
+  "section": "Lieux"
+ },
+ {
+  "id": 1726,
+  "label": "Université",
+  "section": "Lieux"
+ },
+ {
+  "id": 1664,
+  "label": "Bibliothèque",
+  "section": "Lieux"
+ },
+ {
+  "id": 1740,
+  "label": "Académie",
+  "section": "Lieux"
+ },
+ {
+  "id": 1548,
+  "label": "Bâtiment municipal",
+  "section": "Lieux"
+ },
+ {
+  "id": 1552,
+  "label": "Palais de justice",
+  "section": "Lieux"
+ },
+ {
+  "id": 1657,
+  "label": "Police",
+  "section": "Lieux"
+ },
+ {
+  "id": 1557,
+  "label": "Dentiste",
+  "section": "Lieux"
+ },
+ {
+  "id": 1643,
+  "label": "Optométriste",
+  "section": "Lieux"
+ },
+ {
+  "id": 1589,
+  "label": "Salle de sport",
+  "section": "Lieux"
+ },
+ {
+  "id": 1809,
+  "label": "Bain à remous",
+  "section": "Lieux"
+ },
+ {
+  "id": 1697,
+  "label": "Spa",
+  "section": "Lieux"
+ },
+ {
+  "id": 1737,
+  "label": "Yoga",
+  "section": "Lieux"
+ },
+ {
+  "id": 1676,
+  "label": "Prière",
+  "section": "Lieux"
+ },
+ {
+  "id": 1666,
+  "label": "Bahá'í",
+  "section": "Lieux"
+ },
+ {
+  "id": 1668,
+  "label": "Bouddhiste (roue)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1669,
+  "label": "Bouddhiste (zen)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1670,
+  "label": "Chrétien",
+  "section": "Lieux"
+ },
+ {
+  "id": 1672,
+  "label": "Hindou",
+  "section": "Lieux"
+ },
+ {
+  "id": 1673,
+  "label": "Musulman",
+  "section": "Lieux"
+ },
+ {
+  "id": 1674,
+  "label": "Jaïn",
+  "section": "Lieux"
+ },
+ {
+  "id": 1675,
+  "label": "Juif",
+  "section": "Lieux"
+ },
+ {
+  "id": 1830,
+  "label": "Mormon",
+  "section": "Lieux"
+ },
+ {
+  "id": 1677,
+  "label": "Shinto",
+  "section": "Lieux"
+ },
+ {
+  "id": 1678,
+  "label": "Sikh",
+  "section": "Lieux"
+ },
+ {
+  "id": 1671,
+  "label": "Lieu de culte",
+  "section": "Lieux"
+ },
+ {
+  "id": 1706,
+  "label": "Temple",
+  "section": "Lieux"
+ },
+ {
+  "id": 1654,
+  "label": "Vous êtes ici",
+  "section": "Lieux"
+ },
+ {
+  "id": 1608,
+  "label": "Informations",
+  "section": "Lieux"
+ },
+ {
+  "id": 1594,
+  "label": "Aide",
+  "section": "Lieux"
+ },
+ {
+  "id": 1603,
+  "label": "Maison",
+  "section": "Lieux"
+ },
+ {
+  "id": 1686,
+  "label": "Boutique",
+  "section": "Lieux"
+ },
+ {
+  "id": 1583,
+  "label": "Quartier à accès contrôlé",
+  "section": "Lieux"
+ },
+ {
+  "id": 1604,
+  "label": "Quartier",
+  "section": "Lieux"
+ },
+ {
+  "id": 1546,
+  "label": "Ville",
+  "section": "Lieux"
+ },
+ {
+  "id": 1547,
+  "label": "Centre-ville",
+  "section": "Lieux"
+ },
+ {
+  "id": 1565,
+  "label": "Usine",
+  "section": "Lieux"
+ },
+ {
+  "id": 1574,
+  "label": "Drapeau",
+  "section": "Lieux"
+ },
+ {
+  "id": 1770,
+  "label": "Mairie (Japon)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1757,
+  "label": "Banque (Japon)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1834,
+  "label": "Musée (Japon)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1791,
+  "label": "Caserne de pompiers (Japon)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1808,
+  "label": "Hôpital (Japon)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1842,
+  "label": "Police (Japon)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1860,
+  "label": "École (Japon)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1804,
+  "label": "Bâtiment historique (Chine)",
+  "section": "Lieux"
+ },
+ {
+  "id": 1881,
+  "label": "Grand voilier",
+  "section": "Lieux"
+ },
+ {
+  "id": 1885,
+  "label": "Coffre au trésor",
+  "section": "Lieux"
+ },
+ {
+  "id": 1827,
+  "label": "Message dans une bouteille",
+  "section": "Lieux"
+ },
+ {
+  "id": 1863,
+  "label": "Requin",
+  "section": "Lieux"
+ },
+ {
+  "id": 1854,
+  "label": "Robot",
+  "section": "Lieux"
+ },
+ {
+  "id": 1856,
+  "label": "Fusée",
+  "section": "Lieux"
+ },
+ {
+  "id": 1889,
+  "label": "OVNI",
+  "section": "Lieux"
+ },
+ {
+  "id": 1751,
+  "label": "Extraterrestre",
+  "section": "Lieux"
+ },
+ {
+  "id": 1731,
+  "label": "À pied",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1632,
+  "label": "Mobylette",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1633,
+  "label": "Moto",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1538,
+  "label": "Voiture",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1704,
+  "label": "Taxi",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1532,
+  "label": "Bus",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1719,
+  "label": "Métro",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1716,
+  "label": "Train",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1718,
+  "label": "Tramway",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1626,
+  "label": "Métropolitain",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1662,
+  "label": "Voie ferrée",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1717,
+  "label": "Train à vapeur",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1586,
+  "label": "Gondole",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1533,
+  "label": "Téléphérique/Funiculaire",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1629,
+  "label": "Monorail",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1569,
+  "label": "Ferry",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1537,
+  "label": "Ferry pour véhicules",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1504,
+  "label": "Aéroport",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1750,
+  "label": "Piste d'atterrissage",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1593,
+  "label": "Hélicoptère",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1722,
+  "label": "Camion",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1883,
+  "label": "Tracteur",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1562,
+  "label": "Zone de stationnement",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1528,
+  "label": "Pont",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1724,
+  "label": "Tunnel",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1748,
+  "label": "Accident",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1853,
+  "label": "Travaux de voirie",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1884,
+  "label": "Feu de circulation",
+  "section": "Moyens de transport"
+ },
+ {
+  "id": 1655,
+  "label": "Poste de police",
+  "section": "Urgence"
+ },
+ {
+  "id": 1656,
+  "label": "Voiture de police",
+  "section": "Urgence"
+ },
+ {
+  "id": 1807,
+  "label": "Hôpital",
+  "section": "Urgence"
+ },
+ {
+  "id": 1806,
+  "label": "Hôpital (Croissant)",
+  "section": "Urgence"
+ },
+ {
+  "id": 1505,
+  "label": "Ambulance",
+  "section": "Urgence"
+ },
+ {
+  "id": 1558,
+  "label": "Services médicaux",
+  "section": "Urgence"
+ },
+ {
+  "id": 1564,
+  "label": "Explosion",
+  "section": "Urgence"
+ },
+ {
+  "id": 1588,
+  "label": "Arme de poing",
+  "section": "Urgence"
+ },
+ {
+  "id": 1556,
+  "label": "Mort",
+  "section": "Urgence"
+ },
+ {
+  "id": 1628,
+  "label": "Personne disparue",
+  "section": "Urgence"
+ },
+ {
+  "id": 1625,
+  "label": "Troubles publics",
+  "section": "Urgence"
+ },
+ {
+  "id": 1524,
+  "label": "Alerte biologique",
+  "section": "Urgence"
+ },
+ {
+  "id": 1641,
+  "label": "Alerte atomique",
+  "section": "Urgence"
+ },
+ {
+  "id": 1642,
+  "label": "Radioactivité",
+  "section": "Urgence"
+ },
+ {
+  "id": 1653,
+  "label": "Poison",
+  "section": "Urgence"
+ },
+ {
+  "id": 1544,
+  "label": "Alerte chimique",
+  "section": "Urgence"
+ },
+ {
+  "id": 1693,
+  "label": "Pollution",
+  "section": "Urgence"
+ },
+ {
+  "id": 1658,
+  "label": "Liquide renversé",
+  "section": "Urgence"
+ },
+ {
+  "id": 1702,
+  "label": "Coupure d'eau",
+  "section": "Urgence"
+ },
+ {
+  "id": 1831,
+  "label": "Moustique",
+  "section": "Urgence"
+ },
+ {
+  "id": 1660,
+  "label": "Coupure électrique",
+  "section": "Urgence"
+ },
+ {
+  "id": 1541,
+  "label": "Avertissement",
+  "section": "Urgence"
+ },
+ {
+  "id": 1639,
+  "label": "Organisation non gouvernementale",
+  "section": "Urgence"
+ },
+ {
+  "id": 1714,
+  "label": "Vents violents",
+  "section": "Urgence"
+ },
+ {
+  "id": 1723,
+  "label": "Tsunami",
+  "section": "Urgence"
+ },
+ {
+  "id": 1730,
+  "label": "Volcan",
+  "section": "Urgence"
+ },
+ {
+  "id": 1571,
+  "label": "Incendie",
+  "section": "Urgence"
+ },
+ {
+  "id": 1605,
+  "label": "Ouragan (puissant)",
+  "section": "Urgence"
+ },
+ {
+  "id": 1606,
+  "label": "Ouragan (faible)",
+  "section": "Urgence"
+ },
+ {
+  "id": 1575,
+  "label": "Inondation",
+  "section": "Urgence"
+ },
+ {
+  "id": 1560,
+  "label": "Tremblement de terre",
+  "section": "Urgence"
+ },
+ {
+  "id": 1563,
+  "label": "Épicentre",
+  "section": "Urgence"
+ },
+ {
+  "id": 1616,
+  "label": "Glissement de terrain",
+  "section": "Urgence"
+ },
+ {
+  "id": 1630,
+  "label": "Monstre",
+  "section": "Urgence"
+ },
+ {
+  "id": 1700,
+  "label": "Ensoleillé",
+  "section": "Météo"
+ },
+ {
+  "id": 1645,
+  "label": "Partiellement nuageux",
+  "section": "Météo"
+ },
+ {
+  "id": 1550,
+  "label": "Nuageux",
+  "section": "Météo"
+ },
+ {
+  "id": 1543,
+  "label": "Risques de pluie",
+  "section": "Météo"
+ },
+ {
+  "id": 1663,
+  "label": "Pluie",
+  "section": "Météo"
+ },
+ {
+  "id": 1711,
+  "label": "Orage",
+  "section": "Météo"
+ },
+ {
+  "id": 1692,
+  "label": "Neige fondue",
+  "section": "Météo"
+ },
+ {
+  "id": 1695,
+  "label": "Neige",
+  "section": "Météo"
+ },
+ {
+  "id": 1694,
+  "label": "Flocons de neige",
+  "section": "Météo"
+ },
+ {
+  "id": 1576,
+  "label": "Brouillard",
+  "section": "Météo"
+ },
+ {
+  "id": 1736,
+  "label": "Vent",
+  "section": "Météo"
+ },
+ {
+  "id": 1721,
+  "label": "Tempête",
+  "section": "Météo"
+ },
+ {
+  "id": 1710,
+  "label": "Température",
+  "section": "Météo"
+ },
+ {
+  "id": 1619,
+  "label": "Foudre",
+  "section": "Météo"
+ },
+ {
+  "id": 1507,
+  "label": "Animal",
+  "section": "Animaux"
+ },
+ {
+  "id": 1795,
+  "label": "Alligator",
+  "section": "Animaux"
+ },
+ {
+  "id": 1759,
+  "label": "Ours",
+  "section": "Animaux"
+ },
+ {
+  "id": 1874,
+  "label": "Oiseau",
+  "section": "Animaux"
+ },
+ {
+  "id": 1766,
+  "label": "Chat",
+  "section": "Animaux"
+ },
+ {
+  "id": 1775,
+  "label": "Dinosaure",
+  "section": "Animaux"
+ },
+ {
+  "id": 1778,
+  "label": "Chien",
+  "section": "Animaux"
+ },
+ {
+  "id": 1779,
+  "label": "Dauphin",
+  "section": "Animaux"
+ },
+ {
+  "id": 1780,
+  "label": "Canard",
+  "section": "Animaux"
+ },
+ {
+  "id": 1776,
+  "label": "Aigle",
+  "section": "Animaux"
+ },
+ {
+  "id": 1789,
+  "label": "Bouvreuil",
+  "section": "Animaux"
+ },
+ {
+  "id": 1572,
+  "label": "Poisson tropical",
+  "section": "Animaux"
+ },
+ {
+  "id": 1793,
+  "label": "Renard",
+  "section": "Animaux"
+ },
+ {
+  "id": 1620,
+  "label": "Gecko",
+  "section": "Animaux"
+ },
+ {
+  "id": 1797,
+  "label": "Girafe",
+  "section": "Animaux"
+ },
+ {
+  "id": 1679,
+  "label": "Souris",
+  "section": "Animaux"
+ },
+ {
+  "id": 1813,
+  "label": "Méduse",
+  "section": "Animaux"
+ },
+ {
+  "id": 1815,
+  "label": "Kangourou",
+  "section": "Animaux"
+ },
+ {
+  "id": 1818,
+  "label": "Kiwi",
+  "section": "Animaux"
+ },
+ {
+  "id": 1819,
+  "label": "Kraken",
+  "section": "Animaux"
+ },
+ {
+  "id": 1822,
+  "label": "Lion",
+  "section": "Animaux"
+ },
+ {
+  "id": 1828,
+  "label": "Singe",
+  "section": "Animaux"
+ },
+ {
+  "id": 1829,
+  "label": "Élan",
+  "section": "Animaux"
+ },
+ {
+  "id": 1839,
+  "label": "Perroquet",
+  "section": "Animaux"
+ },
+ {
+  "id": 1840,
+  "label": "Pingouin",
+  "section": "Animaux"
+ },
+ {
+  "id": 1847,
+  "label": "Lapin",
+  "section": "Animaux"
+ },
+ {
+  "id": 1848,
+  "label": "Raton laveur",
+  "section": "Animaux"
+ },
+ {
+  "id": 1851,
+  "label": "Rhinocéros",
+  "section": "Animaux"
+ },
+ {
+  "id": 1852,
+  "label": "Gardon",
+  "section": "Animaux"
+ },
+ {
+  "id": 1862,
+  "label": "Phoque",
+  "section": "Animaux"
+ },
+ {
+  "id": 1869,
+  "label": "Serpent",
+  "section": "Animaux"
+ },
+ {
+  "id": 1876,
+  "label": "Écureuil",
+  "section": "Animaux"
+ },
+ {
+  "id": 1888,
+  "label": "Tortue",
+  "section": "Animaux"
+ },
+ {
+  "id": 1894,
+  "label": "Baleine",
+  "section": "Animaux"
+ },
+ {
+  "id": 1796,
+  "label": "Fantôme",
+  "section": "Animaux"
+ }
+]

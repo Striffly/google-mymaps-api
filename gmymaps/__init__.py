@@ -6,3 +6,4 @@ from .api import (
     StyleMode,
     get_client,
 )
+from .icons import find_icons, icon_id

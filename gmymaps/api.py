@@ -20,6 +20,17 @@ BASE_URL = "https://www.google.com/maps/d/u/0"
 GEOMETRY_KEY = "strgeo:" + base64.b64encode(b"gme_geometry_").decode()
 
 
+class StyleMode(enum.IntEnum):
+    """Value sent by the web app when switching how a layer is styled."""
+
+    INDIVIDUAL = 1
+    UNIFORM = 4
+
+
+# The map data stores the active mode with other codes than the ones sent.
+STORED_STYLE_MODES = {4: "sequence", 5: "uniform", 6: "individual", 7: "by_column", 8: "gradient"}
+
+
 # Slots of the change list: each kind of edit lives at a fixed index.
 class Slot(enum.IntEnum):
     CREATE_FEATURE = 1
@@ -30,6 +41,8 @@ class Slot(enum.IntEnum):
     DELETE_LAYER = 10
     RENAME_LAYER = 11
     MOVE_LAYER = 25
+    LAYER_STYLE = 28
+    FEATURE_STYLE = 29
 
 
 @dataclass
@@ -40,6 +53,8 @@ class Point:
     description: str | None
     coords: tuple[float, float] | None
     fields: dict[str, str] = field(default_factory=dict)
+    color: str | None = None  # "RRGGBB" as displayed, own style or the layer's
+    icon: int | None = None
 
 
 @dataclass
@@ -49,6 +64,10 @@ class Layer:
     columns: dict[str, str]  # column name -> attribute key
     title_key: str | None
     points: list[Point]
+    style_mode: str | None = None
+    color: str | None = None  # default color/icon of the active style mode
+    icon: int | None = None
+    labels: str | None = None  # column shown next to each point, "name" for the title
 
     @property
     def description_key(self):
@@ -67,6 +86,11 @@ class MyMap:
             if name_or_id in (layer.id, layer.name):
                 return layer
         raise KeyError(f"No layer named or with id {name_or_id!r}")
+
+
+def color_to_int(color):
+    """'#01579B' or '01579B' -> 87963, the form the web app sends."""
+    return int(color.lstrip("#"), 16)
 
 
 def new_feature_id():
@@ -95,6 +119,14 @@ def geometry_attr(lat, lng, edited=True):
     return attr
 
 
+def point_style(color=None, icon=None):
+    """Style body of a point; a whole layer takes the same body one level less nested."""
+    if color is not None:
+        value = color_to_int(color)
+        return [[[[None, [None, [value]]]], [[value]], [[value], [value]]]]
+    return [[[[1, [icon]]]]]
+
+
 def parse_point(raw, layer_id, key_to_column, title_key, description_key):
     point = Point(id=raw[0], layer_id=layer_id, name=None, description=None, coords=None)
     for attr in raw[11] or []:
@@ -110,18 +142,52 @@ def parse_point(raw, layer_id, key_to_column, title_key, description_key):
     return point
 
 
+def parse_styles(raw_styles):
+    """(mode, default color, default icon, {point_id: (color, icon)}) from a layer's style block.
+
+    Block layout: [active mode, null x15, [[mode, base style, ...], ...]].
+    A style is a list where index 4 is the fill color (index 3 the outline) and index 7 the icon id.
+    In individual mode, entry[17] is [base style, [[point_id, style], ...]].
+    """
+    if not raw_styles:
+        return None, None, None, {}
+    active = raw_styles[0]
+    entries = {entry[0]: entry for entry in raw_styles[16] or []}
+    entry = entries.get(active)
+    if entry is None:
+        return STORED_STYLE_MODES.get(active), None, None, {}
+
+    base = entry[1]
+    overrides = {}
+    if len(entry) > 17 and entry[17] and len(entry[17]) > 1:
+        for point_id, style in entry[17][1]:
+            overrides[point_id] = (style[4], style[7])
+    return STORED_STYLE_MODES.get(active), base[4], base[7], overrides
+
+
 def parse_layer(raw):
     columns = {}
     if len(raw) > 14 and raw[14]:
         for name, _type, key in raw[14][0]:
             columns[name] = key
     title_key = raw[5][4] if raw[5] and len(raw[5]) > 4 else None
-    layer = Layer(id=raw[0], name=raw[1], columns=columns, title_key=title_key, points=[])
+    raw_styles = raw[6] if len(raw) > 6 else None
+    mode, color, icon, overrides = parse_styles(raw_styles)
+    layer = Layer(id=raw[0], name=raw[1], columns=columns, title_key=title_key, points=[],
+                  style_mode=mode, color=color, icon=icon)
 
     key_to_column = {key: name for name, key in columns.items()}
+    label_key = raw_styles[19] if raw_styles and len(raw_styles) > 19 else None
+    if label_key:
+        layer.labels = "name" if label_key == title_key else key_to_column.get(label_key, label_key)
     raw_points = raw[17] if len(raw) > 17 and raw[17] else []
     for raw_point in raw_points:
-        layer.points.append(parse_point(raw_point, layer.id, key_to_column, title_key, layer.description_key))
+        point = parse_point(raw_point, layer.id, key_to_column, title_key, layer.description_key)
+        # An override may set only the color or only the icon; the layer default fills the rest.
+        own_color, own_icon = overrides.get(point.id, (None, None))
+        point.color = own_color or color
+        point.icon = own_icon or icon
+        layer.points.append(point)
     return layer
 
 
@@ -229,6 +295,23 @@ class MapsClient:
         """Position 0 is the top of the legend."""
         self.mutate(map_id, change(map_id, Slot.MOVE_LAYER, [layer_id, position]))
 
+    def set_layer_style_mode(self, map_id, layer_id, mode):
+        self.mutate(map_id, change(map_id, Slot.LAYER_STYLE, [layer_id, [int(mode)]]))
+
+    def set_layer_style(self, map_id, layer_id, color=None, icon=None):
+        """Color and/or icon for the whole layer (uniform style mode)."""
+        for style in self._styles(color, icon):
+            body = [layer_id, None, None, None, [[None, style[0]]]]
+            self.mutate(map_id, change(map_id, Slot.LAYER_STYLE, body))
+
+    def set_layer_labels(self, map_id, layer_id, column="name"):
+        """Show a column as the label next to each point; column=None hides labels."""
+        layer = self._layer(map_id, layer_id)
+        key = layer.title_key if column == "name" else layer.columns.get(column) if column else None
+        labels = [1, key] if key else [0]
+        body = [layer_id] + [None] * 6 + [labels]
+        self.mutate(map_id, change(map_id, Slot.LAYER_STYLE, body))
+
     # Points
 
     def create_point(self, map_id, layer_id, name, lat, lng, description=None):
@@ -260,3 +343,19 @@ class MapsClient:
 
     def delete_point(self, map_id, layer_id, point_id):
         self.mutate(map_id, change(map_id, Slot.DELETE_FEATURE, [None, [point_id], layer_id]))
+
+    def set_point_style(self, map_id, layer_id, point_id, color=None, icon=None):
+        """Color and/or icon of one point (individual style mode)."""
+        for style in self._styles(color, icon):
+            body = [layer_id, None, None, [point_id, style]]
+            self.mutate(map_id, change(map_id, Slot.FEATURE_STYLE, body))
+
+    @staticmethod
+    def _styles(color, icon):
+        # The web app sends color and icon as two separate edits; so do we.
+        styles = []
+        if color is not None:
+            styles.append(point_style(color=color))
+        if icon is not None:
+            styles.append(point_style(icon=icon))
+        return styles

@@ -3,5 +3,6 @@ from .api import (
     MapsClient,
     MyMap,
     Point,
+    StyleMode,
     get_client,
 )

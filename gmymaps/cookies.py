@@ -1,28 +1,23 @@
+"""The Google session cookies gmymaps sends, stored in a Netscape cookie file."""
+
+import os
 from http.cookiejar import MozillaCookieJar
-
-import browser_cookie3
-
-
-COOKIE_FILE = 'cookies.txt'
-
-def save_cookie_input():
-    key = input('Are you sure to extract Google cookies from your browser? [y/N] ')
-    if key.lower() != 'y':
-        exit()
-
-    cj = browser_cookie3.load()
-    mcj = MozillaCookieJar(COOKIE_FILE)
-    for cookie in cj:
-        mcj.set_cookie(cookie)
-    mcj.save()
-    print(f"Cookies saved to {COOKIE_FILE}")
+from pathlib import Path
 
 
-def get_cookies():
-    cj = MozillaCookieJar(COOKIE_FILE)
-    cj.load()
-    return cj
+def cookie_file_path():
+    """$GMYMAPS_COOKIES, or cookies.txt in the user's config directory."""
+    if os.environ.get("GMYMAPS_COOKIES"):
+        return Path(os.environ["GMYMAPS_COOKIES"])
+    config_dir = Path(os.environ.get("XDG_CONFIG_HOME") or Path.home() / ".config")
+    return config_dir / "gmymaps" / "cookies.txt"
 
 
-if __name__ == '__main__':
-    save_cookie_input()
+def get_cookies(path=None):
+    path = Path(path or cookie_file_path())
+    if not path.exists():
+        raise FileNotFoundError(f"{path} not found: export your Google cookies there first")
+    jar = MozillaCookieJar(path)
+    # Google's login cookies include session cookies, which load() drops by default.
+    jar.load(ignore_discard=True)
+    return jar

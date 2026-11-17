@@ -61,6 +61,7 @@ A change is `[MAP_ID, null, …, BODY]`, BODY at a fixed index per operation:
 | 9 | create layer | `[null, 1]` |
 | 10 | delete layer | `[LAYER]` |
 | 11 | rename layer, show or hide it | `[LAYER, NAME]`; `[LAYER, null, 1]` hides it, `[LAYER, null, 0]` shows it |
+| 24 | reorder features in the legend | `[LAYER, null, null, [[FEATURE_ID, POSITION], …]]`, 0 = first; several moves in one change |
 | 25 | move layer | `[LAYER, POSITION]`, 0 = top |
 | 28 | layer style | `[LAYER, [MODE]]`, `[LAYER, null, null, null, [[null, STYLE]]]`, or labels `[LAYER, null × 6, [1, KEY]]` (`[0]` hides them) |
 | 29 | feature style | `[LAYER, null, null, [FEATURE_ID, [STYLE]]]` |

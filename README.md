@@ -18,7 +18,7 @@ styles, icons, layer order and map details.
 |---|---|
 | Map | read everything; set the title and description |
 | Layers | create, rename, delete, reorder, show or hide; individual or uniform style; color and icon; labels |
-| Points | create, rename, describe, move, delete; color and icon |
+| Points | create, rename, describe, move, delete, reorder; color and icon |
 | Icons | catalog of the 397 editor icons, searchable by label |
 
 Lines, shapes, routes, photos and extra data columns are not supported yet.
@@ -100,6 +100,7 @@ client.delete_layer(map_id, layer_id)
 point_id = client.create_point(map_id, layer_id, "Sensō-ji", 35.7148, 139.7967, description="Asakusa")
 client.update_point(map_id, layer_id, point_id, name="Sensō-ji temple", description="Go early")
 client.move_point(map_id, layer_id, point_id, 35.7147, 139.7966)
+client.order_points(map_id, layer_id, [point_id, ...])  # legend order, first to last
 client.delete_point(map_id, layer_id, point_id)
 ```
 

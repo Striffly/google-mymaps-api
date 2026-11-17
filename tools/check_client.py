@@ -82,6 +82,10 @@ def main():
     client.move_layer(map_id, layer_id, 0)
     check("move the layer to the top", client.get_map(map_id).layers[0].id == layer_id)
 
+    client.order_points(map_id, layer_id, [onsen, temple])
+    order = list(points_by_id(client, map_id, layer_id))
+    check("reorder points", order == [onsen, temple], repr(order))
+
     client.delete_point(map_id, layer_id, onsen)
     remaining = list(points_by_id(client, map_id, layer_id))
     check("delete a point", remaining == [temple], repr(remaining))

@@ -40,6 +40,7 @@ class Slot(enum.IntEnum):
     CREATE_LAYER = 9
     DELETE_LAYER = 10
     RENAME_LAYER = 11
+    ORDER_FEATURES = 24
     MOVE_LAYER = 25
     LAYER_STYLE = 28
     FEATURE_STYLE = 29
@@ -351,6 +352,15 @@ class MapsClient:
 
     def delete_point(self, map_id, layer_id, point_id):
         self.mutate(map_id, change(map_id, Slot.DELETE_FEATURE, [None, [point_id], layer_id]))
+
+    def move_points(self, map_id, layer_id, positions):
+        """Reorder points in the legend: positions maps point id -> new index (0 = first)."""
+        moves = [[point_id, index] for point_id, index in positions.items()]
+        self.mutate(map_id, change(map_id, Slot.ORDER_FEATURES, [layer_id, None, None, moves]))
+
+    def order_points(self, map_id, layer_id, point_ids):
+        """Put the layer's points in this order; points left out keep their place after them."""
+        self.move_points(map_id, layer_id, {point_id: index for index, point_id in enumerate(point_ids)})
 
     def set_point_style(self, map_id, layer_id, point_id, color=None, icon=None):
         """Color and/or icon of one point (individual style mode)."""

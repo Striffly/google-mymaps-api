@@ -68,6 +68,7 @@ class Layer:
     color: str | None = None  # default color/icon of the active style mode
     icon: int | None = None
     labels: str | None = None  # column shown next to each point, "name" for the title
+    visible: bool = True  # checked in the legend
 
     @property
     def description_key(self):
@@ -194,6 +195,9 @@ def parse_layer(raw):
 def parse_map(map_data):
     header = map_data[0]
     layers = [parse_layer(raw) for raw in map_data[1] or []]
+    hidden = set(header[8] or []) if len(header) > 8 else set()
+    for layer in layers:
+        layer.visible = layer.id not in hidden
     return MyMap(id=header[0], title=header[1], description=header[2], layers=layers)
 
 
@@ -287,6 +291,10 @@ class MapsClient:
 
     def rename_layer(self, map_id, layer_id, name):
         self.mutate(map_id, change(map_id, Slot.RENAME_LAYER, [layer_id, name]))
+
+    def set_layer_visible(self, map_id, layer_id, visible=True):
+        """Check or uncheck the layer in the legend; the state is saved with the map, for every viewer."""
+        self.mutate(map_id, change(map_id, Slot.RENAME_LAYER, [layer_id, None, 0 if visible else 1]))
 
     def delete_layer(self, map_id, layer_id):
         self.mutate(map_id, change(map_id, Slot.DELETE_LAYER, [layer_id]))

@@ -18,6 +18,7 @@ Without edit access the request is redirected to `/viewer`. OAuth tokens (gcloud
 |---|---|
 | `[0][0]`, `[0][1]`, `[0][2]` | map id, title, description |
 | `[0][4]` | layer ids, legend order |
+| `[0][8]` | ids of the hidden (unchecked) layers, or null |
 | `[1]` | layers |
 
 Layer:
@@ -59,7 +60,7 @@ A change is `[MAP_ID, null, …, BODY]`, BODY at a fixed index per operation:
 | 8 | map title, description | `[TITLE, DESCRIPTION]` |
 | 9 | create layer | `[null, 1]` |
 | 10 | delete layer | `[LAYER]` |
-| 11 | rename layer | `[LAYER, NAME]` |
+| 11 | rename layer, show or hide it | `[LAYER, NAME]`; `[LAYER, null, 1]` hides it, `[LAYER, null, 0]` shows it |
 | 25 | move layer | `[LAYER, POSITION]`, 0 = top |
 | 28 | layer style | `[LAYER, [MODE]]`, `[LAYER, null, null, null, [[null, STYLE]]]`, or labels `[LAYER, null × 6, [1, KEY]]` (`[0]` hides them) |
 | 29 | feature style | `[LAYER, null, null, [FEATURE_ID, [STYLE]]]` |

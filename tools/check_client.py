@@ -74,6 +74,11 @@ def main():
     labels = client.get_map(map_id).layer(layer_id).labels
     check("hide labels", labels is None, repr(labels))
 
+    client.set_layer_visible(map_id, layer_id, False)
+    check("hide the layer", not client.get_map(map_id).layer(layer_id).visible)
+    client.set_layer_visible(map_id, layer_id, True)
+    check("show the layer", client.get_map(map_id).layer(layer_id).visible)
+
     client.move_layer(map_id, layer_id, 0)
     check("move the layer to the top", client.get_map(map_id).layers[0].id == layer_id)
 

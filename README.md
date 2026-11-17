@@ -17,7 +17,7 @@ styles, icons, layer order and map details.
 | | |
 |---|---|
 | Map | read everything; set the title and description |
-| Layers | create, rename, delete, reorder; individual or uniform style; color and icon; labels |
+| Layers | create, rename, delete, reorder, show or hide; individual or uniform style; color and icon; labels |
 | Points | create, rename, describe, move, delete; color and icon |
 | Icons | catalog of the 397 editor icons, searchable by label |
 
@@ -90,6 +90,7 @@ layer_id = client.create_layer(map_id, name="Tokyo")
 client.rename_layer(map_id, layer_id, "Tokyo - temples")
 client.move_layer(map_id, layer_id, 0)             # 0 = top of the legend
 client.set_layer_labels(map_id, layer_id, "name")  # None hides the labels
+client.set_layer_visible(map_id, layer_id, False)  # unchecked in the legend, for every viewer
 client.delete_layer(map_id, layer_id)
 ```
 
